@@ -18,7 +18,7 @@ int main() {
         length--; // Mengurangi panjang karena kita menghapus newline
     }
 
-    // Memastikan panjang input valid
+    
     if (length < 1 || length > 20) {
         return 1; // Keluar jika panjang tidak valid
     }

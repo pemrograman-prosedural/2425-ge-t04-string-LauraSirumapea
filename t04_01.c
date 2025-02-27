@@ -6,8 +6,8 @@
 #include <string.h>
 
 int main() {
-    char input[61]; // Maksimum panjang 60 karakter + 1 untuk null terminator
-    char message[21]; // Pesan akhir, cukup untuk 20 karakter + 1 untuk null terminator
+    char input[61]; 
+    char message[21]; 
     int length, i;
 
     // Membaca input dari stdin
@@ -22,15 +22,14 @@ int main() {
 
     // Mengonversi setiap tiga karakter menjadi karakter ASCII
     for (i = 0; i < length; i += 3) {
-        char temp[4]; // Buffer untuk menyimpan tiga karakter + null terminator
+        char temp[4]; 
         strncpy(temp, input + i, 3);
-        temp[3] = '\0'; // Menambahkan null terminator
-        message[i / 3] = (char)atoi(temp); // Mengonversi ke integer dan ke karakter
+        temp[3] = '\0'; 
+        message[i / 3] = (char)atoi(temp); 
     }
     
-    message[i / 3] = '\0'; // Menambahkan null terminator di akhir pesan
+    message[i / 3] = '\0'; 
 
-    // Menampilkan pesan Icarus
     printf("%s\n", message);
 
     return 0;
