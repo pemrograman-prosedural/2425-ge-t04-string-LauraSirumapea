@@ -10,17 +10,14 @@ int main() {
     char message[21]; 
     int length, i;
 
-    // Membaca input dari stdin
     scanf("%60s", input);
     
     length = strlen(input);
     
-    // Memastikan panjang input valid
     if (length < 3 || length > 60 || length % 3 != 0) {
         return 1; // Keluar jika panjang tidak valid
     }
 
-    // Mengonversi setiap tiga karakter menjadi karakter ASCII
     for (i = 0; i < length; i += 3) {
         char temp[4]; 
         strncpy(temp, input + i, 3);

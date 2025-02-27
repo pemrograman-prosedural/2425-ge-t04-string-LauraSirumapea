@@ -20,12 +20,8 @@ jobs:
         test-name: test-01_01
         setup-command: make compile
         command: make -s test_01
-        input: '099105104117121033
-
-          '
-        expected-output: 'cihuy!
-
-          '
+        input: '099105104117121033'
+        expected-output: 'cihuy!'
         comparison-method: exact
         timeout: 1
         max-score: 10
@@ -36,12 +32,8 @@ jobs:
         test-name: test-01_02
         setup-command: make compile
         command: make -s test_01
-        input: '089111117044032109101044032038032067
-
-          '
-        expected-output: 'You, me, & C
-
-          '
+        input: '089111117044032109101044032038032067'
+        expected-output: 'You, me, & C'
         comparison-method: exact
         timeout: 1
         max-score: 10
@@ -52,12 +44,8 @@ jobs:
         test-name: test-01_03
         setup-command: make compile
         command: make -s test_01
-        input: '074117115116052067111100101
-
-          '
-        expected-output: 'Just4Code
-
-          '
+        input: '074117115116052067111100101'
+        expected-output: 'Just4Code'
         comparison-method: exact
         timeout: 1
         max-score: 10
@@ -68,9 +56,7 @@ jobs:
         test-name: test_01-04
         setup-command: make compile
         command: make -s test_01
-        input: '043
-
-          '
+        input: '043'
         expected-output: "+\n"
         comparison-method: exact
         timeout: 1
@@ -82,12 +68,8 @@ jobs:
         test-name: test_02-01
         setup-command: make compile
         command: make -s test_02
-        input: 'Big O
-
-          '
-        expected-output: '066105103032079013
-
-          '
+        input: 'Big O'
+        expected-output: '066105103032079013'
         comparison-method: exact
         timeout: 1
         max-score: 15
@@ -98,12 +80,8 @@ jobs:
         test-name: test_02-02
         setup-command: make compile
         command: make -s test_02
-        input: 'Jaka Sembung
-
-          '
-        expected-output: '074097107097032083101109098117110103013
-
-          '
+        input: 'Jaka Sembung'
+        expected-output: '074097107097032083101109098117110103013'
         comparison-method: exact
         timeout: 1
         max-score: 15
@@ -114,12 +92,8 @@ jobs:
         test-name: test_02-03
         setup-command: make compile
         command: make -s test_02
-        input: 'c_total=blackscreen
-
-          '
-        expected-output: '099095116111116097108061098108097099107115099114101101110013
-
-          '
+        input: 'c_total=blackscreen'
+        expected-output: '099095116111116097108061098108097099107115099114101101110013'
         comparison-method: exact
         timeout: 1
         max-score: 15
@@ -131,9 +105,7 @@ jobs:
         setup-command: make compile
         command: make -s test_02
         input: "C\n "
-        expected-output: '067013
-
-          '
+        expected-output: '067013'
         comparison-method: exact
         timeout: 1
         max-score: 15
@@ -150,3 +122,4 @@ jobs:
         TEST_02-04_RESULTS: "${{steps.test_02-04.outputs.result}}"
       with:
         runners: test-01_01,test-01_02,test-01_03,test_01-04,test_02-01,test_02-02,test_02-03,test_02-04
+        

@@ -1,2 +1,3 @@
 Menyelesaikan Tugas T04
 Menyelesaikan Tugas T04
+Menambahkan autograding 
