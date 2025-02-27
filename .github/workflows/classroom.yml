@@ -122,4 +122,3 @@ jobs:
         TEST_02-04_RESULTS: "${{steps.test_02-04.outputs.result}}"
       with:
         runners: test-01_01,test-01_02,test-01_03,test_01-04,test_02-01,test_02-02,test_02-03,test_02-04
-        

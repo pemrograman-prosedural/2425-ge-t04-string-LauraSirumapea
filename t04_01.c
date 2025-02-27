@@ -15,7 +15,7 @@ int main() {
     length = strlen(input);
     
     if (length < 3 || length > 60 || length % 3 != 0) {
-        return 1; // Keluar jika panjang tidak valid
+        return 1; 
     }
 
     for (i = 0; i < length; i += 3) {
