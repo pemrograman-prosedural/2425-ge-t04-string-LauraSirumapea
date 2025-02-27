@@ -82,8 +82,8 @@ Output
 ```
 #### Example 2
 Input
-```
-c_total=blackscreen
+```c_total=blackscreen
+
 
 ```
 Output
